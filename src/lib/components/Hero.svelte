@@ -1,20 +1,15 @@
 <script lang="ts">
-	import { invalidateAll } from '$app/navigation';
-	import { page } from '$app/stores';
-
-	import Button from '$lib/components/Button.svelte';
 	import Title from '$lib/components/Title.svelte';
 
-    import { errorContent } from '$lib/constants';
+	import { heroContent } from '$lib/constants';
 </script>
 
 <section class="wrapper">
 	<div class="container">
-		<Title titleText={errorContent.title} />
-
+		<Title titleText={heroContent.title} />
 		<div class="info">
-			<p class="message">{$page.error?.message}</p>
-			<Button type="button" variant="primary" on:click={invalidateAll}>{errorContent.buttonText}</Button>
+			<p class="description">{heroContent.description}</p>
+			<a class="link" href={`mailto:${heroContent.linkText}`}>{heroContent.linkText}</a>
 		</div>
 	</div>
 </section>
@@ -37,23 +32,35 @@
 	}
 
 	.container {
-		@include container(var(--space-8));
+		@include container(64rem);
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
+		gap: var(--space-4) 0;
+
+		@include respond-to('lg') {
+			gap: var(--space-6) 0;
+		}
 	}
 
 	.info {
 		display: flex;
 		flex-direction: column;
-		gap: var(--space-4);
+		justify-content: center;
+		gap: var(--space-4) 0;
 	}
 
-	.message {
+	.description {
 		font-size: var(--fs-base);
 		font-weight: var(--fw-regular);
 		line-height: var(--lh-condensed);
+		color: var(--clr-grey);
+		text-align: center;
+	}
+
+	.link {
+		font-size: var(--fs-base);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-tight);
 		color: var(--clr-grey);
 		text-align: center;
 	}
