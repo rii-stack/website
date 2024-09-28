@@ -1,0 +1,17 @@
+@use 'sass:color';
+
+$colors: (
+	'grey': rgb(192, 192, 192),
+	'red': rgb(202, 66, 70),
+	'black': rgb(0, 0, 0),
+	'white': rgb(255, 255, 255)
+);
+
+:root {
+	/* Color variables */
+	@each $name, $color in $colors {
+		--clr-#{$name}: #{$color};
+		// for safari use case: https://ambientimpact.com/web/snippets/safari-bug-with-gradients-that-fade-to-transparent
+		--clr-#{$name}-transparent: #{color.change($color, $alpha: 0)};
+	}
+}
