@@ -1,0 +1,28 @@
+// prettier-ignore
+$spacer-base: 1rem;
+
+$spacers: (
+	'0': 0,
+	'1': 0.25 * $spacer-base,
+	/* 4px */ '2': 0.5 * $spacer-base,
+	/* 8px */ '3': 0.75 * $spacer-base,
+	/* 12px */ '4': 1 * $spacer-base,
+	/* 16px */ '5': 1.25 * $spacer-base,
+	/* 20px */ '6': 1.5 * $spacer-base,
+	/* 24px */ '7': 1.75 * $spacer-base,
+	/* 28px */ '8': 2 * $spacer-base,
+	/* 32px */ '9': 3 * $spacer-base,
+	/* 48px */ '10': 4 * $spacer-base,
+	/* 64px */ '11': 5 * $spacer-base,
+	/* 80px */ '12': 6 * $spacer-base,
+	/* 96px */ '13': 7 * $spacer-base,
+	/* 112px */ '14': 8 * $spacer-base,
+	/* 128px */
+);
+
+:root {
+	/* Space variables */
+	@each $name, $spacer in $spacers {
+		--space-#{$name}: #{$spacer};
+	}
+}

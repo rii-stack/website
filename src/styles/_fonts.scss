@@ -1,0 +1,59 @@
+@import './_functions/fluid';
+
+$font-size: (
+	xs: fluid-type(8px, 12px),
+	sm: fluid-type(12px, 16px),
+	base: fluid-type(16px, 20px),
+	md: fluid-type(20px, 24px),
+	lg: fluid-type(24px, 32px),
+	xl: fluid-type(32px, 40px),
+	xxl: fluid-type(40px, 48px),
+	xxxl: fluid-type(80px, 96px)
+);
+
+$font-weight: (
+	thin: 100,
+	normal: 400,
+	bold: 700,
+	black: 900
+);
+
+$letter-spacing: (
+	tighter: -0.05em,
+	tight: -0.025em,
+	normal: 0em,
+	wide: 0.025em,
+	wider: 0.05em,
+	widest: 0.1em
+);
+
+$line-height: (
+	none: 1,
+	tight: 1.25,
+	snug: 1.375,
+	normal: 1.5,
+	relaxed: 1.625,
+	loose: 2
+);
+
+:root {
+	/* Font size variables */
+	@each $name, $value in $font-size {
+		--fs-#{$name}: #{$value};
+	}
+
+	/* Font weight variables */
+	@each $name, $value in $font-weight {
+		--fw-#{$name}: #{$value};
+	}
+
+	/* Letter spacing variables */
+	@each $name, $value in $letter-spacing {
+		--ls-#{$name}: #{$value};
+	}
+
+	/* Line height variables */
+	@each $name, $value in $line-height {
+		--lh-#{$name}: #{$value};
+	}
+}
