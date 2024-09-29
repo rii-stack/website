@@ -1,10 +1,13 @@
 export const heroContent = {
 	title: 'Coming Soon',
-	description: 'From automation of people processes to creating an engaged and driven culture.',
+	description: 'From automation of people processes to creating an engaged and driven culture.'
+};
+
+export const footerContent = {
 	linkText: 'info@vecloctus.com'
 };
 
 export const errorContent = {
 	title: 'Oops, something went wrong...',
 	buttonText: 'Try again'
-}
+};

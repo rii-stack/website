@@ -7,10 +7,10 @@
 @import './_utils.scss';
 @import './_variables.scss';
 
-@include font-face('Roboto', 'Roboto-Thin', '$lib/fonts', 100, normal, woff2);
-@include font-face('Roboto', 'Roboto-Regular', '$lib/fonts', 400, normal, woff2);
-@include font-face('Roboto', 'Roboto-Bold', '$lib/fonts', 700, normal, woff2);
-@include font-face('Roboto', 'Roboto-Black', '$lib/fonts', 900, normal, woff2);
+@include font-face('Inter', 'Inter-Thin', '$lib/fonts', 100, normal, woff2);
+@include font-face('Inter', 'Inter-Regular', '$lib/fonts', 400, normal, woff2);
+@include font-face('Inter', 'Inter-Bold', '$lib/fonts', 700, normal, woff2);
+@include font-face('Inter', 'Inter-Black', '$lib/fonts', 900, normal, woff2);
 
 html {
 	-moz-osx-font-smoothing: grayscale;
@@ -20,7 +20,7 @@ html {
 
 body {
 	position: relative;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Inter', sans-serif;
 	line-height: 1;
 	color: black;
 	-webkit-font-smoothing: antialiased;
@@ -29,6 +29,6 @@ body {
 
 html,
 body {
-	background-color: var(--clr-purple-1000);
+	background-color: var(--clr-black);
 	scroll-behavior: smooth;
 }

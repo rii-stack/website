@@ -1,14 +1,17 @@
 <script lang="ts">
 	import '$styles/_global.scss';
+
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <main class="main">
 	<slot />
 </main>
+<Footer />
 
 <svelte:head>
-	<title>Veloctus</title>
-	<meta name="title" content="Veloctus" />
+	<title>Vecloctus</title>
+	<meta name="title" content="Vecloctus" />
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -24,9 +27,9 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 	<link rel="manifest" href="/manifest.json" />
-	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileColor" content="#0e1117" />
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-	<meta name="theme-color" content="#ffffff" />
+	<meta name="theme-color" content="#0e1117" />
 </svelte:head>
 
 <style lang="scss">

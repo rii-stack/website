@@ -3,15 +3,18 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "npm run version && vite dev",
-		"build": "npm run version && vite build",
-		"preview": "npm run version && vite preview",
-		"check": "npm run version && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "npm run version && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"dev": "yarn run version && vite dev",
+		"build": "yarn run version && vite build",
+		"preview": "yarn run version && vite preview",
+		"check": "yarn run version && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "yarn run version && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test": "vitest",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"version": "check-node-version --node $(cat .nvmrc)"
+	},
+	"dependencies": {
+		"check-node-version": "^4.2.1"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
@@ -32,8 +35,5 @@
 		"vite": "^5.0.3",
 		"vitest": "^2.0.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"check-node-version": "^4.2.1"
-	}
+	"type": "module"
 }
