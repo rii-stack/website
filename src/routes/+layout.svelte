@@ -10,8 +10,8 @@
 <Footer />
 
 <svelte:head>
-	<title>Veloctus</title>
-	<meta name="title" content="Veloctus" />
+	<title>Vecloctus</title>
+	<meta name="title" content="Vecloctus" />
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
