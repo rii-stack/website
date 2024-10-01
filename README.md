@@ -1,4 +1,4 @@
-# <center>Veloctus</center>
+# <center>Vecloctus</center>
 
 ## 🚧 Requirements:
 
@@ -6,6 +6,6 @@
 
 ## 🏁 Getting Started
 
-1. git clone https://github.com/Matter333/materia_dome.git.
+1. git clone git@github.com:rii-stack/website.git.
 2. yarn install.
 3. yarn run dev.
