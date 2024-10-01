@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
+
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -6,6 +7,9 @@ const config = {
 	alias: {
 		$routes: 'src/routes',
 		$styles: 'src/styles'
+	},
+	paths: {
+		base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 	},
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
