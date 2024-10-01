@@ -23,7 +23,7 @@
 	}
 
 	.link {
-		font-size: var(--fs-base);
+		font-size: var(--fs-sm);
 		font-weight: var(--fw-normal);
 		line-height: var(--lh-tight);
 		color: var(--clr-grey);
