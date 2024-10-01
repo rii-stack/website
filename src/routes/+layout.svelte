@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts">	
 	import '$styles/_global.scss';
 
 	import Footer from '$lib/components/Footer.svelte';
