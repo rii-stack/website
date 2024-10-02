@@ -1,5 +1,6 @@
-<script lang="ts">	
+<script lang="ts">
 	import '$styles/_global.scss';
+	import { metaContent } from '$lib/constants';
 
 	import Footer from '$lib/components/Footer.svelte';
 </script>
@@ -11,7 +12,8 @@
 
 <svelte:head>
 	<title>Vecloctus</title>
-	<meta name="title" content="Vecloctus" />
+	<meta name="title" content={metaContent.title} />
+	<meta name="description" content={metaContent.description} />
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
