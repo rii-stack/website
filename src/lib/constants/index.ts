@@ -1,3 +1,8 @@
+export const metaContent = {
+	title: 'Vecloctus',
+	description: 'Data driven UAVs autonomous solutions.'
+}
+
 export const heroContent = {
 	title: 'Coming Soon',
 	description: 'Data driven UAVs autonomous solutions.'
