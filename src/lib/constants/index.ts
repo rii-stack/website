@@ -1,6 +1,6 @@
 export const heroContent = {
 	title: 'Coming Soon',
-	description: 'From automation of people processes to creating an engaged and driven culture.'
+	description: 'Data driven UAVs autonomous solutions.'
 };
 
 export const footerContent = {

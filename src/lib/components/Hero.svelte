@@ -40,15 +40,11 @@
 	}
 
 	.title {
-		font-size: var(--fs-xxl);
+		font-size: var(--fs-xxxl);
 		font-weight: var(--fw-black);
 		line-height: var(--lh-tight);
 		text-align: center;
 		cursor: pointer;
-
-		@include respond-to('lg') {
-			font-size: var(--fs-xxxl);
-		}
 	}
 
 	.description {
